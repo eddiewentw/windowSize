@@ -18,12 +18,6 @@ h3 {
 	margin-left: 5vw;
 }
 
-.height {
-	width: 90vh;
-	text-align: center;
-	margin: 0px auto;
-}
-
 .top {
 	top: 2%;
 
@@ -36,20 +30,34 @@ h3 {
 	bottom: 2%;
 }
 
-.left {
+.horizontal {
+	position: absolute;
 	top: 50%;
-	left: -20%;
+	left: 50%;
+	margin-top: -50vw;
+	margin-left: -50vh;
+	width: 100vh;
+	height: 100vw;
 
 	-webkit-transform: rotate( 90deg ); /* Chrome, Safari, Opera */
 	-ms-transform: rotate( 90deg ); /* IE 9 */
 	transform: rotate( 90deg );
 }
 
-.right {
-	top: 50%;
-	right: -20%;
+.height {
+	width: 60vh;
+	margin-left: 20vh;
+	text-align: center;
+}
 
-	-webkit-transform: rotate( 270deg ); /* Chrome, Safari, Opera */
-	-ms-transform: rotate( 270deg ); /* IE 9 */
-	transform: rotate( 270deg );
+.left {
+	bottom: 20px;
+}
+
+.right {
+	top: 20px;
+
+	-webkit-transform: rotate( 180deg ); /* Chrome, Safari, Opera */
+	-ms-transform: rotate( 180deg ); /* IE 9 */
+	transform: rotate( 180deg );
 }
