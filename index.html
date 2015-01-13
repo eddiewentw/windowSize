@@ -14,20 +14,30 @@
 	<link rel="stylesheet" type="text/css" href="./main.css" >
 
 	<script type="text/javascript" src="./jquery.min.js"></script>
+	<script tpye="text/javascript">
+		var windowW, windowH;
+		$(document).ready( function(){
+			windowW = $(window).width();
+			windowH = $(window).height();
+
+			$('.width .num').text( windowW );
+			$('.height .num').text( windowH );
+		});
+	</script>
 
 </head>
 
 <body>
 
-	<!-- <h3 class="width top">Width is <span></span>px</h3>
+	<h3 class="width top">Width is <span class="num"></span>px</h3>
 
-	<h3 class="width bottom">Width is <span></span>px</h3> -->
+	<h3 class="width bottom">Width is <span class="num"></span>px</h3>
 
 	<div class="horizontal">
 
-		<h3 class="height left">Height is <span></span>px</h3>
+		<h3 class="height left">Height is <span class="num"></span>px</h3>
 
-		<h3 class="height right">Height is <span></span>px</h3>
+		<h3 class="height right">Height is <span class="num"></span>px</h3>
 
 	</div>
 

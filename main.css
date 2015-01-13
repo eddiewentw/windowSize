@@ -19,7 +19,7 @@ h3 {
 }
 
 .top {
-	top: 2%;
+	top: 20px;
 
 	-webkit-transform: rotate( 180deg ); /* Chrome, Safari, Opera */
 	-ms-transform: rotate( 180deg ); /* IE 9 */
@@ -27,7 +27,7 @@ h3 {
 }
 
 .bottom {
-	bottom: 2%;
+	bottom: 20px;
 }
 
 .horizontal {
