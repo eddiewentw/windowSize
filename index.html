@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Show your window size</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
+
+	<!--   Google Font - Open sans   -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="./main.css" >
+
+	<script type="text/javascript" src="./jquery.min.js"></script>
+	<script tpye="text/javascript">
+		var windowW, windowH;
+		$(document).ready( function(){
+			windowW = $(window).width();
+			windowH = $(window).height();
+
+			$('.width .num').text( windowW );
+			$('.height .num').text( windowH );
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<h3 class="width top">Width is <span class="num"></span>px</h3>
+
+	<h3 class="width bottom">Width is <span class="num"></span>px</h3>
+
+	<div class="horizontal">
+
+		<h3 class="height left">Height is <span class="num"></span>px</h3>
+
+		<h3 class="height right">Height is <span class="num"></span>px</h3>
+
+	</div>
+
+</body>
+
+</html>
+
