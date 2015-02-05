@@ -1,7 +1,6 @@
 # windowSize
 
-This web will show the width and height of your device.
+Show the width and height of your device.
 
-And
+[Click ME](http://eddiewen-taiwan.github.io/windowSize/)
 
-http://eddiewen-taiwan.github.io/windowSize/
