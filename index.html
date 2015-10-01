@@ -9,20 +9,21 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
 
 	<!--   Google Font - Open sans   -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="./main.css" >
 
-	<script type="text/javascript" src="./jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="./jquery.min.js"></script> -->
 	<script tpye="text/javascript">
-		var windowW, windowH;
-		$(document).ready( function(){
-			windowW = $(window).width();
-			windowH = $(window).height();
+		window.onload = function(){
+			var windowW = window.innerWidth;
+			var windowH = window.innerHeight;
 
 			$('.width .num').text( windowW );
 			$('.height .num').text( windowH );
-		});
+			console.log("in");
+			console.log(windowW);
+		}
 	</script>
 
 </head>
