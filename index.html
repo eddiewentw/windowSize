@@ -13,16 +13,15 @@
 
 	<link rel="stylesheet" type="text/css" href="./main.css" >
 
-	<!-- <script type="text/javascript" src="./jquery.min.js"></script> -->
 	<script tpye="text/javascript">
 		window.onload = function(){
-			var windowW = window.innerWidth;
-			var windowH = window.innerHeight;
+			var wd = window.innerWidth;
+			var wh = window.innerHeight;
 
-			$('.width .num').text( windowW );
-			$('.height .num').text( windowH );
-			console.log("in");
-			console.log(windowW);
+			document.getElementById("wt").innerHTML = wd;
+			document.getElementById("wb").innerHTML = wd;
+			document.getElementById("hl").innerHTML = wh;
+			document.getElementById("hr").innerHTML = wh;
 		}
 	</script>
 
@@ -30,15 +29,15 @@
 
 <body>
 
-	<h3 class="width top">Width is <span class="num"></span>px</h3>
+	<h3 id="wt" class="width top"></h3>
 
-	<h3 class="width bottom">Width is <span class="num"></span>px</h3>
+	<h3 id="wb" class="width bottom"></h3>
 
 	<div class="horizontal">
 
-		<h3 class="height left">Height is <span class="num"></span>px</h3>
+		<h3 id="hl" class="height left"></h3>
 
-		<h3 class="height right">Height is <span class="num"></span>px</h3>
+		<h3 id="hr" class="height right"></h3>
 
 	</div>
 
