@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--  -->
+
 <head>
 
 	<title>Show your window size</title>
@@ -9,35 +9,35 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
 
 	<!--   Google Font - Open sans   -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="./main.css" >
 
-	<script type="text/javascript" src="./jquery.min.js"></script>
 	<script tpye="text/javascript">
-		var windowW, windowH;
-		$(document).ready( function(){
-			windowW = $(window).width();
-			windowH = $(window).height();
+		window.onload = function(){
+			var wd = window.innerWidth;
+			var wh = window.innerHeight;
 
-			$('.width .num').text( windowW );
-			$('.height .num').text( windowH );
-		});
+			document.getElementById("wt").innerHTML = wd;
+			document.getElementById("wb").innerHTML = wd;
+			document.getElementById("hl").innerHTML = wh;
+			document.getElementById("hr").innerHTML = wh;
+		}
 	</script>
 
 </head>
 
 <body>
 
-	<h3 class="width top">Width is <span class="num"></span>px</h3>
+	<h3 id="wt" class="width top"></h3>
 
-	<h3 class="width bottom">Width is <span class="num"></span>px</h3>
+	<h3 id="wb" class="width bottom"></h3>
 
 	<div class="horizontal">
 
-		<h3 class="height left">Height is <span class="num"></span>px</h3>
+		<h3 id="hl" class="height left"></h3>
 
-		<h3 class="height right">Height is <span class="num"></span>px</h3>
+		<h3 id="hr" class="height right"></h3>
 
 	</div>
 
