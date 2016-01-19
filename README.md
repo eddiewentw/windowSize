@@ -2,5 +2,4 @@
 
 Show the width and height of your device.
 
-[Click ME](http://eddiewen-taiwan.github.io/windowSize/)
-
+[http://github.eddiewen.me/windowSize/](http://github.eddiewen.me/windowSize/)
