@@ -3,39 +3,29 @@
 
 <head>
 
-	<title>Show your window size</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
-	<meta name="description" content="Show your window size" />
-	<meta name="author" content="溫奕書 / Eddie Wen" />
-	<meta name="URL" content="http://github.eddiewen.me/windowSize/" />
-	<meta name="image" content="http://github.eddiewen.me/windowSize/image.png" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height">
+
+	<title>Show your window size</title>
+
+	<meta name="description" content="Show your window size">
+	<meta name="author" content="溫奕書 / Eddie Wen">
+	<meta name="URL" content="http://github.eddiewen.me/windowSize/">
+	<meta name="image" content="http://github.eddiewen.me/windowSize/image.png">
 
 	<!-- Open Graph -->
-	<meta property="og:site_name" content="windowSize" />
-	<meta property="og:title" content="windowSize" />
-	<meta property="og:description" content="Show your window size" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://github.eddiewen.me/windowSize/" />
-	<meta property="og:image" content="http://github.eddiewen.me/windowSize/image.png" />
+	<meta property="og:site_name" content="windowSize">
+	<meta property="og:title" content="windowSize">
+	<meta property="og:description" content="Show your window size">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://github.eddiewen.me/windowSize/">
+	<meta property="og:image" content="http://github.eddiewen.me/windowSize/image.png">
 
-	<!--   Google Font - Open sans   -->
+	<!-- Google Font -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="./main.css" >
-
-	<script tpye="text/javascript">
-	window.onload = function() {
-		const wd = screen.width;
-		const wh = screen.height;
-
-		document.getElementById("wt").innerHTML = wd;
-		document.getElementById("wb").innerHTML = wd;
-		document.getElementById("hl").innerHTML = wh;
-		document.getElementById("hr").innerHTML = wh;
-	}
-	</script>
+	<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 
@@ -53,7 +43,18 @@
 
 	</div>
 
+<script>
+window.onload = function() {
+	const wd = screen.width;
+	const wh = screen.height;
+
+	document.getElementById("wt").innerHTML = wd;
+	document.getElementById("wb").innerHTML = wd;
+	document.getElementById("hl").innerHTML = wh;
+	document.getElementById("hr").innerHTML = wh;
+}
+</script>
+
 </body>
 
 </html>
-
